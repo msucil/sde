@@ -1,10 +1,12 @@
-package dev.msucil.exercise.sde.general.array;
+package dev.msucil.exercise.sde.general.array.leader;
 
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
+
+import dev.msucil.exercise.sde.general.array.leader.LeaderInArray;
 
 class LeaderInArrayTest {
 

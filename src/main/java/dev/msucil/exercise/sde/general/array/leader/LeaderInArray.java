@@ -1,4 +1,4 @@
-package dev.msucil.exercise.sde.general.array;
+package dev.msucil.exercise.sde.general.array.leader;
 
 import java.util.ArrayList;
 import java.util.List;

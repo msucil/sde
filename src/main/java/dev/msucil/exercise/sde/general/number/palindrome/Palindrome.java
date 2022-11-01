@@ -1,4 +1,4 @@
-package dev.msucil.exercise.sde.general.number;
+package dev.msucil.exercise.sde.general.number.palindrome;
 
 public class Palindrome {
 
@@ -7,11 +7,11 @@ public class Palindrome {
 
 	public static boolean isPalindromeUsingReverseMethod(int number) {
 
-		if (number > 0 && number < 10) {
+		if (number >= 0 && number < 10) {
 			return true;
 		}
 
-		var reverseNumber = reverseNumber(number);
+		var reverseNumber = reverseNumber(Math.abs(number));
 
 		return number == reverseNumber;
 	}
@@ -26,6 +26,35 @@ public class Palindrome {
 		}
 
 		return reverseNumber;
+	}
+
+	public static boolean isPalindromeWithoutExtraSpacee(int number) {
+
+		number = Math.abs(number);
+		
+		int divisor = 1;
+
+		while (number / divisor >= 10) {
+			divisor *= 10;
+		}
+
+		while (number != 0) {
+			int leading = number / divisor;
+			int trailing = number % 10;
+
+			if (leading != trailing) {
+				return false;
+			}
+
+			// remove leading and trailing digit from number
+			number = (number % divisor) / 10;
+
+			// reduce divisor by a factor of 2 since 2 digits are removed from the number
+			divisor = divisor / 100;
+
+		}
+
+		return true;
 	}
 
 }
