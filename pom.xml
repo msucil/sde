@@ -23,7 +23,7 @@
 		<java.version>17</java.version>
 		<junit.version>5.9.1</junit.version>
 		<compiler.plugin.version>3.11.0</compiler.plugin.version>
-		<jacoco.plugin.version>0.8.8</jacoco.plugin.version>
+		<jacoco.plugin.version>0.8.9</jacoco.plugin.version>
 		<project.testresult.directory>${project.build.directory}/test-results
     </project.testresult.directory>
 	</properties>
